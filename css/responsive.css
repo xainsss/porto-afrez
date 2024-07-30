@@ -1,0 +1,179 @@
+/* Media query untuk layar berukuran lebih kecil */
+@media (max-width: 1200px) {
+  html {
+    font-size: 75%;
+  }
+  .home-content h1 {
+    font-size: 3rem;
+  }
+
+  .home-content p {
+    font-size: 1rem;
+  }
+
+  .about-container {
+    padding: 30px 20px;
+  }
+
+  .about-me .profile {
+    left: 10px;
+  }
+
+  .about-info h1 {
+    font-size: 3rem;
+    top: 10rem;
+  }
+  .top-about-me h1 {
+    text-align: center;
+    margin-top: 2em;
+  }
+  #services-sec h2 {
+    color: #fff;
+    margin-left: -0em;
+    margin-top: 97px;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .img-about img {
+    width: 50%;
+    height: -50%;
+  }
+  #services-sec #paragraph {
+    width: 60%; /* Mengubah lebar paragraf pada layar lebih kecil */
+  }
+
+  .cards {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Mengubah menjadi 2 kolom pada layar lebih kecil */
+  }
+
+  .cards .card {
+    width: 100%; /* Menyesuaikan lebar kartu untuk mengisi seluruh lebar pada layar lebih kecil */
+    margin: 0; /* Menghapus margin samping pada kartu */
+  }
+  #services-sec h2 {
+    margin-top: 30px;
+  }
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #services-sec #paragraph {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  section {
+    min-height: auto;
+  }
+
+  #hamberger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+
+  .header .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+  }
+
+  .header .navbar.active {
+    display: flex;
+  }
+
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .home .img img {
+    max-width: 300px;
+  }
+
+  .about-me .profile {
+    left: 10px;
+  }
+
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-info h1 {
+    font-size: 3rem;
+  }
+
+  .col-about {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .img-about img {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    min-height: auto;
+  }
+
+  .home {
+    display: flex;
+    align-items: start;
+  }
+
+  .home-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-content p {
+    font-size: 0.9rem;
+  }
+
+  .about-container {
+    padding: 15px;
+  }
+
+  .about-info h1 {
+    font-size: 3rem;
+  }
+  .about-me p {
+    font-size: 1.5rem;
+  }
+  .img-about img {
+    display: none;
+  }
+  .cards {
+    width: 50%;
+    display: flexbox;
+  }
+
+  #paragraph {
+    margin-bottom: 85em;
+  }
+}

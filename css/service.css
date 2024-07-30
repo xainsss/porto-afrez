@@ -1,0 +1,112 @@
+.services {
+  margin-bottom: 1em;
+}
+#services-sec {
+  min-height: 740px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#paragraph {
+  align-items: flex-start;
+}
+
+#services-sec h2 {
+  color: #fff;
+  margin-left: -0em;
+  margin-bottom: 6em;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+#services-sec h2::after,
+#services-sec h2::before {
+  position: absolute;
+  content: " ";
+  top: 30%;
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  /* Pastikan --text-color telah didefinisikan di root atau di tempat lain */
+}
+
+/*#services-sec h2::after {
+  left: -30px;
+  border-left: 20px solid var(--text-color);
+}
+
+#services-sec h2::before {
+  right: -30px;
+  border-right: 20px solid var(--text-color);
+}
+*/
+#services-sec #paragraph {
+  width: 40%;
+  position: absolute;
+  margin-top: -20%;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Tata letak kartu responsif */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  z-index: 9;
+  margin-top: 20px;
+}
+
+.cards .card {
+  min-height: 280px;
+  width: 380px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 8%;
+  background-color: rgb(65, 62, 105);
+  color: #fff;
+  position: relative;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.cards .card::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: var(
+    --main-color
+  ); /* Pastikan --main-color telah didefinisikan di root atau di tempat lain */
+  transition: 0.5s ease;
+  transform: rotate(0deg);
+  z-index: -1;
+}
+
+.cards .card:hover::before {
+  transform: rotate(10deg);
+}
+
+.cards .card i {
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.cards .card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
